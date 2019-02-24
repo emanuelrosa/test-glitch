@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "test-glitch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "8.x"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuelrosa/test-glitch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emanuelrosa/test-glitch/issues"
+  },
+  "homepage": "https://github.com/emanuelrosa/test-glitch#readme"
+}
