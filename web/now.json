@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "test-glitch",
+  "builds": [
+    { "src": "package.json", "use": "@now/next" }
+  ],
+  "routes": [
+    {
+      "src": "/(discord\/|discord)",
+      "status": 302,
+      "headers": {
+        "location": "https://discordapp.com/invite/AKsmEdS"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "headers": {
+        "x-request-path": "$1"
+      }
+    }
+  ]
+}
