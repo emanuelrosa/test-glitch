@@ -21,7 +21,9 @@ before_script:
   - npm prune
 
 script:
+  - pwd
   - npx sync-glitch-cli
+  - npx now alias $(npx now ./web --token=$ZEIT_TOKEN) $ZEIT_URL --token=$ZEIT_TOKEN
 
 notifications:
   email:
