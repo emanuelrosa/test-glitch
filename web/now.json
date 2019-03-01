@@ -9,7 +9,7 @@
       "src": "/(discord\/|discord)",
       "status": 302,
       "headers": {
-        "location": "https://discordapp.com/invite/AKsmEdS"
+        "location": "https://discordapp.com"
       }
     },
     {
