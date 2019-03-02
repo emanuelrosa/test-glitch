@@ -1,5 +1,13 @@
 // --------------------------
 
+// debug
+
+// console.log(`${process.env.GLITCH_URL}`)
+// console.log(`${process.env.GLITCH_TOKEN}`)
+// console.log(`${process.env.GLITCH_PROJECT_ID}`)
+// console.log(`${process.env.GLITCH_REPO}`)
+// console.log(`${process.env.GLITCH_PATH}`)
+
 const request = require('request')
 
 const options = {
@@ -20,6 +28,10 @@ const options = {
 }
 
 request(options, function (error, response, body) {
+
+  // debug
+  // if (error) throw new Error(error);
+  // console.log(body);
 
   if (body === 'OK') {
     console.log('Sucess to sync changes in your bot')
