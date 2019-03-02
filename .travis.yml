@@ -22,7 +22,7 @@ before_script:
 
 script:
   - pwd
-  - npx emanuelrosa/sync-glitch-cli#feature/addpath
+  - node ./botapp/bin/glitch.js
   - npx now alias $(npx now ./web --token=$ZEIT_TOKEN) $ZEIT_URL --token=$ZEIT_TOKEN
 
 notifications:
