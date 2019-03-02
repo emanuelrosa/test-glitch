@@ -23,7 +23,10 @@ before_script:
 
 script:
   - pwd
-  - node ./botapp/bin/glitch.js
+  - cd ./botapp
+  - npm install
+  - node ./bin/glitch.js
+  - cd -
   - npx now alias $(npx now ./web --token=$ZEIT_TOKEN) $ZEIT_URL --token=$ZEIT_TOKEN
 
 notifications:
