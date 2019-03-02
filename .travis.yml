@@ -6,6 +6,7 @@ cache:
 
 node_js:
   # https://medium.com/@mikeal/stop-supporting-old-releases-70cfa0e04b0c
+  #
   - "lts/*"
 
 # Trigger a push build on master and greenkeeper branches + PRs build on every branches
