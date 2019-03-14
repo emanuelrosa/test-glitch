@@ -7,7 +7,7 @@ CHECKSUM=".checksum"
 
 directory() {
   [ -d $1 ] && \
-    echo "check. directory: ${1} already exists" || \
+    echo "=> CHECK | directory: ${1} already exists" || \
     mkdir $1
 }
 
