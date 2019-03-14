@@ -5,7 +5,7 @@ echo "=> RUN | start app.sh"
 
 curl \
   --request POST \
-  --url "${APP_API}" \
+  --url "${GLITCH_URL}/project/githubImport?authorization=${GLITCH_TOKEN}&projectId=${GLITCH_PROJECT_ID}&repo=${GLITCH_REPO}&path=${GLITCH_PATH}" \
   --header "accept: */*" \
   --header "origin: https://${APP_DOMAIN}" \
   --header "referer: https://${APP_DOMAIN}/edit/" \
